@@ -1,0 +1,14 @@
+file_format: "1"
+id: newage
+name: Newage
+type: shield
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
+siblings:
+  - newAge_left
+  - newAge_right
