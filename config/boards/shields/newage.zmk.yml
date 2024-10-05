@@ -2,6 +2,7 @@ file_format: "1"
 id: newage
 name: Newage
 type: shield
+url: https://github.com/steffMorse/zmk-config-newage.git
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
