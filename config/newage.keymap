@@ -14,7 +14,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
         adjust_layer {
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
@@ -33,8 +32,7 @@
                   &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo LOWER  &kp C_MUTE    &tog ADJUST  &mo RAISE  &kp BACKSPACE  &kp ENTER  &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         lower_layer {
@@ -46,8 +44,7 @@
        &none   &none   &none   &none   &none    &none    &none   &none   &none   &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         raise_layer {
@@ -59,8 +56,7 @@
         &trans      &trans     &trans       &trans       &trans    &trans      &trans        &trans        &trans        &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         adjust_layer {
@@ -72,8 +68,7 @@
                    &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
     };
 };
