@@ -13,9 +13,7 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: newage_left nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: newage_right nice_view_adapter nice_view
+west build -b nice_nano_v2 -- -DSHIELD="newage_left nice_view_adapter nice_view"
+west build -b nice_nano_v2 -- -DSHIELD="newage_right nice_view_adapter nice_view"
   - board: nice_nano_v2
     shield: settings_reset
