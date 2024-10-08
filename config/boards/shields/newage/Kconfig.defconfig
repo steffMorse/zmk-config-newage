@@ -15,10 +15,10 @@ config ZMK_SPLIT
 
 if ZMK_DISPLAY
 
-config I2C
+config SPI
     default y
 
-config SSD1306
+config NICEVIEW
     default y
 
 endif # ZMK_DISPLAY
@@ -26,10 +26,10 @@ endif # ZMK_DISPLAY
 if LVGL
 
 config LV_Z_VDB_SIZE
-    default 64
+    default 100
 
 config LV_DPI_DEF
-    default 148
+    default 161
 
 config LV_Z_BITS_PER_PIXEL
     default 1
