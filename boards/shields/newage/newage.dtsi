@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zephyr,display = &oled;
+//      zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
     };
@@ -61,21 +61,9 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                 RC(2,6) RC(2,7) 
 };
 
 &pro_micro_i2c {
-    status = "okay";
+    status = "disabled";
+};
 
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        inversion-on;
-        prechargep = <0x22>;
-    };
+nice_view_spi: &spi1 {
+        cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
