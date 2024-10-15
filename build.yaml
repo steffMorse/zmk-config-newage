@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: newage_left nice_view
+    shield: newage_left nice_view_custom
   - board: nice_nano_v2
-    shield: newage_right nice_view
+    shield: newage_right nice_view_custom
   - board: nice_nano_v2
     shield: settings_reset
