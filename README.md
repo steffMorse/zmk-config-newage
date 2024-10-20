@@ -1,5 +1,5 @@
 # Newage Wireless Split Keyboard - ZMK Firmware
-Firmware for: [Urchin Keyboard](https://github.com/duckyb/urchin)
+Firmware for: Newage Keyboard
 
 ## Getting started
 
