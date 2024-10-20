@@ -1,4 +1,3 @@
-# Newage Wireless Split Keyboard - ZMK Firmware
 Firmware for: Newage Keyboard
 
 ## Getting started
