@@ -20,7 +20,6 @@
         };
     };
 
-/ {
     combos {
         compatible = "zmk,combos";
         combo_capslock {
@@ -30,7 +29,6 @@
 	    layers = <0>;
         };
     };
-};
 
     behaviors {
         hml: hml {
